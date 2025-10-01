@@ -1,0 +1,74 @@
+# LibraryManagement
+Library Management DotNet web API .NET 8
+==>First Please download dotnet 8 and if using Vs code download the necessary extension
+
+==> Install dependency for EntityFramwork and SQLite use the command --
+
+    dotnet add package Microsoft.EntityFrameworkCore
+    dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+    dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+==> Install Postman or you can also directlty run this url online in Postman , better to install if you want to work without signin
+
+
+==> install Migration   ---->   dotnet tool install --global dotnet-ef
+
+==> run migration --> dotnet ef migrations add InitialCreate
+                  --> dotnet ef database update
+
+
+
+==> donet build      ----> run this command
+
+==> dotnet run      ----> run this command
+
+you will get one url
+
+
+hit that url in Postman, first that db will be empty so add some book....in postman select Type == Post
+
+Url= http://localhost:5171/BooksSetup/LibraryManagement/AddNewBook
+ 
+ Body->raw->json
+
+ {
+  "title": "C# Advance",
+  "author": "Roshan",
+  "year": 2025
+}
+
+# for getting all books in store ...type=GET is postman
+
+http://localhost:5171/BooksSetup/LibraryManagement/GetAllBooksDetails
+
+#for getting book by id
+
+http://localhost:5171/BooksSetup/LibraryManagement/GetBookById?id=1
+
+Note:- if some data is there in database then put that id which you want to get the detals....id give  in the url how i have given above id?yourvalue
+
+# for update (PUT)
+
+http://localhost:5171/BooksSetup/LibraryManagement/UpdateBookDetails/1
+
+json
+
+{
+  "title": "C# Advanced",
+  "author": "Roshan Srivastava",
+  "year": 2026
+}
+
+
+for delete=== DELETE
+
+http://localhost:5171/BooksSetup/LibraryManagement/DeleteBook/1
+
+
+
+
+
+
+
+
+
