@@ -1,4 +1,8 @@
 # LibraryManagement
+======================IF CLONING THIS CODE========================================================================
+If you are Cloning The Repository Then you Just Need .NET 8 SDK to be instslled in your system====just run dotnet restore  command to install all dependent NuGet packages=====teh RUN dotnet build and then dotnet run Command then directly use url in postman==============================================
+
+================================For  Developing New Dotnet Web API in .NET8 from scratch   Follow the steps=============================:-
 Library Management DotNet web API .NET 8
 ==>First Please download dotnet 8 and if using Vs code download the necessary extension
 
